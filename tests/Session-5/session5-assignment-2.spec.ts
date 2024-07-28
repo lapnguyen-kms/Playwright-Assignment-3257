@@ -6,7 +6,7 @@ import { CartPage } from '../../pages/cart.page';
 import { CheckoutPage } from '../../pages/checkout.page';
 import { ConfirmationPage } from '../../pages/confirmation.page';
 
-test('End-to-End Test', async ({ page }) => {
+test('Verify user can order product successfully', async ({ page }) => {
   const loginPage = new LoginPageStandard(page);
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);
