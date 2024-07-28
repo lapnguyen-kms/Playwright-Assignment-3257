@@ -1,21 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import { PlaywrightTestConfig } from '@playwright/test';
 
-const config: PlaywrightTestConfig = {
-  use: {
-    headless: true,
-  },
-  testDir: './tests',
-  projects: [
-    {
-      name: 'chromium',
-      use: { browserName: 'chromium' },
-    },
-  ],
-  reporter: [['list'], ['json', { outputFile: 'results.json' }]],
-};
-
-export default config;
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
